@@ -16,7 +16,6 @@ export default class ConsumerKafka {
   getMessage() {
     let retorno = [].concat(this.messages)
     this.messages = []
-    console.log('retorno => ', retorno)
     return retorno
   }
 

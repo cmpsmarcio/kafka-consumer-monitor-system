@@ -4,7 +4,7 @@ export default class Monitor extends Component {
   constructor(props) {
     super(props)
 
-    this.intervalID;
+    this.intervalID = null;
 
     this.state = {
       data: []
