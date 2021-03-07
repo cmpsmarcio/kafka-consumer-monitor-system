@@ -50,19 +50,19 @@ export default class Monitor extends Component {
           <td>{data.droneId}</td>
           <td>{data.latitude}</td>
           <td>{data.longitude}</td>
-          <td><a href={`https://www.google.com/maps/search/?api=1&query=${data.latitude},${data.longitude}`} target="_blank">Mapa</a></td>
+          <td><a href={`https://www.google.com/maps/search/?api=1&query=${data.latitude},${data.longitude}`} target="_blank">Abrir no Maps</a></td>
         </tr>
       )
     })
 
     return (
       <div>
-        <table id="drones" className="tabledrone">
+        <table id="drones">
           <thead>
             <tr>
               <th>Id</th>
-              <th>latitude</th>
-              <th>longitude</th>
+              <th>Latitude</th>
+              <th>Longitude</th>
               <th>Mostrar no mapa</th>
             </tr>
           </thead>
