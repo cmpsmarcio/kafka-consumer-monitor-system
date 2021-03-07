@@ -9,7 +9,6 @@ export default class Monitor extends Component {
     this.state = {
       data: []
     }
-    //this.handleClick = this.handleClick.bind(this)
   }
 
   componentDidMount() {
@@ -51,7 +50,7 @@ export default class Monitor extends Component {
           <td>{data.droneId}</td>
           <td>{data.latitude}</td>
           <td>{data.longitude}</td>
-          <td>link</td>
+          <td><a href={`https://www.google.com/maps/search/?api=1&query=${data.latitude},${data.longitude}`} target="_blank">Mapa</a></td>
         </tr>
       )
     })
